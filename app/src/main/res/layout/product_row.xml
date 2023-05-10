@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="10"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/txt_product_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="28sp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70 lik Yağ"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/txt_product_id"
+        android:layout_toLeftOf="@+id/txt_product_price"
+        android:layout_alignBaseline="@id/txt_product_id"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/txt_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10₺"
+        android:layout_marginRight="10dp"
+        android:layout_alignBaseline="@id/txt_product_id"
+        android:layout_toLeftOf="@id/btnEdit"
+        />
+
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btnDelete"
+        android:layout_marginRight="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@+id/txt_product_price"
+        />
+
+
+</RelativeLayout>
